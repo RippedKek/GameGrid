@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&family=Great+Vibes&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dawning+of+a+New+Day&family=Great+Vibes&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.font-roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+.font-dawning {
+  font-family: "Dawning of a New Day", sans-serif;
+}
+
+.font-great-vibes {
+  font-family: "Great Vibes", cursive;
+}
+
+.font-josefin-sans {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.font-bebas {
+  font-family: "Bebas Neue", sans-serif;
+}
