@@ -1,15 +1,19 @@
 import React from "react";
 import { FaDesktop, FaPlaystation, FaXbox } from "react-icons/fa";
 
-function Categories() {
+function Categories({ onCategorySelect }) {
   const categories = [
     { name: "PC", icon: <FaDesktop size={64} className="text-cyan-500" /> },
     {
-      name: "PS5/PS4",
+      name: "PS5",
       icon: <FaPlaystation size={64} className="text-white" />,
     },
     { name: "XBOX", icon: <FaXbox size={64} className="text-green-500" /> },
   ];
+
+  const handleCategoryClick = (categoryName) => {
+    onCategorySelect(categoryName); 
+  };
 
   return (
     <div className="py-16">
@@ -20,6 +24,7 @@ function Categories() {
         {categories.map((category, index) => (
           <div
             key={index}
+            onClick={() => handleCategoryClick(category.name)} 
             className="flex flex-col items-center bg-gray-800 p-6 rounded-lg hover:bg-gray-700 transition duration-300 cursor-pointer"
           >
             {category.icon}

@@ -1,0 +1,35 @@
+.category-list {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .category-button {
+    padding: 10px 20px;
+    background-color: #00bcd4;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .category-button:hover {
+    background-color: #ff4081;
+  }
+  
+  .games-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .game-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .game-image {
+    max-width: 100%;
+    height: auto;
+  }
+  
